@@ -1,12 +1,7 @@
 # Docker Minecraft Provisioning Script
 
-This script is intended to provision a quick Minecraft Server solution based on container technology.
+This script is intended to provision a quick Minecraft Server solution based on Docker container technology.
 
-
-#### Requirements
-
-* Ubuntu Server 16.04 LTS
-* Docker >= 17.09
 
 
 ## Usage
