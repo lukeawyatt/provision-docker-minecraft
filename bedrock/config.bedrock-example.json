@@ -1,0 +1,21 @@
+{
+	"ContainerName": "AwesomeServer",
+	"CleanupAfterProvision": true,
+	"VolumePath": "\VOLUMES\AwesomeServer",
+	"ServerName": "AwesomeServer",
+	"ServerPort": 19132,
+	"MinecraftVersion": "LATEST",
+	"OnlineMode": true,
+	"Gamemode": "survival",
+	"Difficulty": "easy",
+	"MaxPlayers": 20,
+	"ViewDistance": 10,
+	"PlayerIdleTimeout": 10,
+	"LevelName": "DefaultWorld",
+	"LevelType": "DEFAULT",
+	"Seed": "2151901553968352745",
+	"Ops": "2535463267832599",
+	"Whitelist": "",
+	"AllowCheats": true,
+	"TexturePackRequired": true
+}
