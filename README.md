@@ -192,7 +192,6 @@ This sets the game mode. Available values can be set by either the ID or name.
 ```shell
 # FOR JAVA, AVAILABLE VALUES: creative (1), survival (0), adventure (2), spectator (3)
 "Gamemode": "survival"
-MODE=0
 
 # FOR BEDROCK, AVAILABLE VALUES: creative (1), survival (0), adventure (2)
 "Gamemode": "survival"
@@ -252,4 +251,4 @@ When new versions of the packaged Dockerhub images are released, simply re-run t
 
 ## Feedback
 
-If you have any problems with or questions about this script, please contact me using a [GitHub Issue](https://github.com/lukeawyatt/provision-docker-minecraft/issues)
+If you have any problems with or questions about this script, please contact me using [GitHub Issues](https://github.com/lukeawyatt/provision-docker-minecraft/issues)
