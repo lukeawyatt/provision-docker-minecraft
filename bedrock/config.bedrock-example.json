@@ -1,7 +1,8 @@
 {
+	"VersionTag": "latest",
 	"ContainerName": "AwesomeServer",
 	"CleanupAfterProvision": true,
-	"VolumePath": "\VOLUMES\AwesomeServer",
+	"VolumePath": "/VOLUMES/AwesomeServer",
 	"ServerName": "AwesomeServer",
 	"ServerPort": 19132,
 	"MinecraftVersion": "LATEST",

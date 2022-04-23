@@ -1,3 +1,5 @@
+## GIT EXCLUSIONS ##
+
 # IGNORE TEMP FILES
 .DS_Store
 *~

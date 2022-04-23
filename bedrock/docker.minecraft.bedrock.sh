@@ -6,7 +6,7 @@
 ##                                                                 ##
 ## Author:                                             Luke Wyatt  ##
 ## Contact:                                         <luke@skre.ws> ##
-## Create | Modify Dates:                  2016.12.21 | 2021.02.18 ##
+## Create | Modify Dates:                  2016.12.21 | 2022.04.23 ##
 ## Repository:    github.com/lukeawyatt/provision-docker-minecraft ##
 ## Reference:              github.com/itzg/docker-minecraft-server ##
 #####################################################################
@@ -77,6 +77,10 @@ fi
 ###################
 # REGION: PARSING #
 ###################
+
+PROP='VersionTag'
+VERSION_TAG=`jsonval`
+echo "Parsing value for ContainerName: $VERSION_TAG"
 
 PROP='ContainerName'
 CONTAINER_NAME=`jsonval`
@@ -157,12 +161,12 @@ echo "Parsing value for TexturePackRequired: $TEXTUREPACK_REQUIRED"
 
 
 
-###################
-# REGION: PARSING #
-###################
+########################
+# REGION: PROVISIONING #
+########################
 
 echo "Pulling Minecraft server image..."
-docker pull itzg/minecraft-bedrock-server:latest
+docker pull itzg/minecraft-bedrock-server:$VERSION_TAG
 echo "Done."
 echo;echo;
 
@@ -217,7 +221,7 @@ docker run \
 	--restart=unless-stopped \
 	--tty \
 	--name=$CONTAINER_NAME \
-	itzg/minecraft-bedrock-server:latest
+	itzg/minecraft-bedrock-server:$VERSION_TAG
 echo "Done."
 echo;echo;
 
