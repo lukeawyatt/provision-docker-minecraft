@@ -56,6 +56,7 @@ These settings affect the docker container and the underlying JVM.
 
 ```shell
 # FOR JAVA
+"VersionTag": "latest"
 "ContainerName": "AwesomeServer"
 "VolumePath": "\VOLUMES\AwesomeServer"
 "ServerName": "AwesomeServer"
@@ -63,6 +64,7 @@ These settings affect the docker container and the underlying JVM.
 "Memory": "2G"
 
 # FOR BEDROCK
+"VersionTag": "latest"
 "ContainerName": "AwesomeServer"
 "VolumePath": "\VOLUMES\AwesomeServer"
 "ServerName": "AwesomeServer"
